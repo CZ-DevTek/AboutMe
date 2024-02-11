@@ -95,7 +95,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="j6g-lE-dmz">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="aUW-Yv-2XK" customClass="WelcomeViewController" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="aUW-Yv-2XK" customClass="WelcomeViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N1B-TV-zQ6">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
