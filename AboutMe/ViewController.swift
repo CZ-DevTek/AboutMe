@@ -17,14 +17,20 @@ final class ViewController: UIViewController {
         view.endEditing(true)
     }
     
-    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+    override func shouldPerformSegue(
+        withIdentifier identifier: String,
+        sender: Any?
+    ) -> Bool {
         guard let userName = userName.text, let password = password.text else {
             return false
         }
         if userName == "User" && password == "User" {
             return true
         } else {
-            showAlert(withTitle: "Invalid Username or Password", andMessage: "Please enter correct username and password.")
+            showAlert(
+                withTitle: "Invalid Username or Password",
+                andMessage: "Please enter correct username and password."
+            )
             return false
         }
     }
@@ -35,11 +41,17 @@ final class ViewController: UIViewController {
         }
     
     @IBAction func forgotUserTapped() {
-        showAlert(withTitle: "Did you forget your user name?", andMessage: "Your user name is 'User'")
+        showAlert(
+            withTitle: "Did you forget your user name?",
+            andMessage: "Your user name is 'User'"
+        )
     }
     
     @IBAction func forgotPassTapped() {
-        showAlert(withTitle: "Did you forget your password?", andMessage: "Your password is 'User'")
+        showAlert(
+            withTitle: "Did you forget your password?",
+            andMessage: "Your password is 'User'"
+        )
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
@@ -47,11 +59,27 @@ final class ViewController: UIViewController {
         password.text = ""
     }
     
-    func showAlert(withTitle title: String, andMessage message: String) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alert.addAction(okAction)
-        present(alert, animated: true)
+    func showAlert(
+        withTitle title: String,
+        andMessage message: String
+    ) {
+        let alert = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: .alert
+        )
+        let okAction = UIAlertAction(
+            title: "OK",
+            style: .default,
+            handler: nil
+        )
+        alert.addAction(
+            okAction
+        )
+        present(
+            alert,
+            animated: true
+        )
     }
 }
 
