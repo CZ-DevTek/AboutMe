@@ -15,6 +15,7 @@ struct Person {
     let surname: String
     let studies: String
     let position: String
+    let hobbies: String
     let biography: String
 }
 
