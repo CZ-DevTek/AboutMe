@@ -18,5 +18,4 @@ struct Person {
     let biography: String
 }
 
-    static func getUser() -> User {
-}
+//    static func getUser() -> User { }

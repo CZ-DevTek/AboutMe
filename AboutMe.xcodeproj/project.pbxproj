@@ -16,6 +16,7 @@
 		4F28F09F2B77E81300BFB6C5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F28F09E2B77E81300BFB6C5 /* WelcomeViewController.swift */; };
 		4F5E7E3B2B7AC1E90057D0B9 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5E7E3A2B7AC1E90057D0B9 /* UserModel.swift */; };
 		4F5E7E3D2B7AC38D0057D0B9 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5E7E3C2B7AC38D0057D0B9 /* UserViewController.swift */; };
+		4F5E7E3F2B7C06370057D0B9 /* BioUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5E7E3E2B7C06370057D0B9 /* BioUserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4F28F09E2B77E81300BFB6C5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
 		4F5E7E3A2B7AC1E90057D0B9 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		4F5E7E3C2B7AC38D0057D0B9 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		4F5E7E3E2B7C06370057D0B9 /* BioUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				4F28F08E2B77B8E400BFB6C5 /* LoginViewController.swift */,
 				4F28F09E2B77E81300BFB6C5 /* WelcomeViewController.swift */,
 				4F5E7E3C2B7AC38D0057D0B9 /* UserViewController.swift */,
+				4F5E7E3E2B7C06370057D0B9 /* BioUserViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			files = (
 				4F28F08F2B77B8E400BFB6C5 /* LoginViewController.swift in Sources */,
 				4F5E7E3D2B7AC38D0057D0B9 /* UserViewController.swift in Sources */,
+				4F5E7E3F2B7C06370057D0B9 /* BioUserViewController.swift in Sources */,
 				4F28F09F2B77E81300BFB6C5 /* WelcomeViewController.swift in Sources */,
 				4F28F08B2B77B8E400BFB6C5 /* AppDelegate.swift in Sources */,
 				4F5E7E3B2B7AC1E90057D0B9 /* UserModel.swift in Sources */,

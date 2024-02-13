@@ -1,5 +1,5 @@
 //
-//  UserViewController.swift
+//  BioUserViewController.swift
 //  AboutMe
 //
 //  Created by Carlos Garcia Perez on 13/2/24.
@@ -7,9 +7,9 @@
 
 import UIKit
 
-final class UserViewController: UIViewController {
+final class BioUserViewController: UIViewController {
     
-//    private let user = User.getUser()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
