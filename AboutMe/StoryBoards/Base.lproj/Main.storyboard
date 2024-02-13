@@ -153,7 +153,7 @@
         <!--UserViewController-->
         <scene sceneID="yvs-Jb-6z5">
             <objects>
-                <viewController title="UserViewController" modalPresentationStyle="fullScreen" id="IC4-Ct-JOt" sceneMemberID="viewController">
+                <viewController title="UserViewController" modalPresentationStyle="fullScreen" id="IC4-Ct-JOt" customClass="UserViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0kJ-Nz-Hjg">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -161,7 +161,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="ERB-B6-tev">
-                        <barButtonItem key="rightBarButtonItem" title="Bio" id="9nw-GQ-eBN"/>
+                        <barButtonItem key="rightBarButtonItem" title="Bio" id="9nw-GQ-eBN">
+                            <connections>
+                                <segue destination="OXm-ib-w6d" kind="show" identifier="BioSegue" id="tNv-dI-v2p"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UX0-vs-9sb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -173,11 +177,12 @@
             <objects>
                 <viewController id="OXm-ib-w6d" customClass="BioUserViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GB2-T8-B75">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="4SU-xZ-bF1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="hEV-49-Nob"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HPN-y4-Ya6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,8 +8,6 @@
 import UIKit
 
 final class BioUserViewController: UIViewController {
-    
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
