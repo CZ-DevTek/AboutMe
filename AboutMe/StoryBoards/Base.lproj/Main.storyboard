@@ -227,13 +227,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="qr9-FB-y9z">
                                         <rect key="frame" x="0.0" y="184.5" width="118.5" height="20.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Position:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXG-HW-L9e">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Position:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXG-HW-L9e">
                                                 <rect key="frame" x="0.0" y="0.0" width="54" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Xp-42-j7e">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Xp-42-j7e">
                                                 <rect key="frame" x="77" y="0.0" width="41.5" height="20.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="41.5" id="GUr-aB-8Ry"/>
@@ -282,6 +282,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="hobbiesLabel" destination="yvs-lS-gxH" id="q6z-3C-o0X"/>
+                        <outlet property="nameLabel" destination="8w6-Ag-goz" id="Tec-dX-QNV"/>
+                        <outlet property="positionLabel" destination="6Xp-42-j7e" id="mfZ-xB-u22"/>
+                        <outlet property="studiesLabel" destination="bpp-nh-GyF" id="PSd-LK-nYc"/>
+                        <outlet property="surnameLabel" destination="gfw-wM-csy" id="fM3-G5-Z1S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UX0-vs-9sb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -294,14 +301,43 @@
                     <view key="view" contentMode="scaleToFill" id="GB2-T8-B75">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Moc-NQ-qim">
+                                <rect key="frame" x="36" y="207" width="303" height="391"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="391" id="iiQ-bt-JtH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName Biography" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vz-Pc-UI1">
+                                <rect key="frame" x="30" y="104" width="306.5" height="57"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="4SU-xZ-bF1"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="8vz-Pc-UI1" firstAttribute="leading" secondItem="4SU-xZ-bF1" secondAttribute="leading" constant="30" id="0Cw-b3-GWR"/>
+                            <constraint firstItem="Moc-NQ-qim" firstAttribute="bottom" secondItem="4SU-xZ-bF1" secondAttribute="bottom" constant="-20" id="MvG-sM-d7h"/>
+                            <constraint firstItem="4SU-xZ-bF1" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8vz-Pc-UI1" secondAttribute="trailing" id="WG3-5R-Pha"/>
+                            <constraint firstItem="Moc-NQ-qim" firstAttribute="top" secondItem="8vz-Pc-UI1" secondAttribute="bottom" constant="46" id="eRI-cW-K8q"/>
+                            <constraint firstItem="8vz-Pc-UI1" firstAttribute="top" secondItem="4SU-xZ-bF1" secondAttribute="top" constant="48" id="ezM-GA-ujz"/>
+                            <constraint firstItem="Moc-NQ-qim" firstAttribute="leading" secondItem="4SU-xZ-bF1" secondAttribute="leading" constant="36" id="kNJ-zQ-cns"/>
+                            <constraint firstItem="Moc-NQ-qim" firstAttribute="centerX" secondItem="GB2-T8-B75" secondAttribute="centerX" id="tan-a7-asj"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hEV-49-Nob"/>
+                    <connections>
+                        <outlet property="bioDescriptionLabel" destination="Moc-NQ-qim" id="RMd-NA-n2W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HPN-y4-Ya6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2775" y="732"/>
+            <point key="canvasLocation" x="2773.5999999999999" y="731.78410794602701"/>
         </scene>
         <!--Bio User View Controller-->
         <scene sceneID="Oad-7K-fIP">

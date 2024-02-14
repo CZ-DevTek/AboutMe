@@ -9,6 +9,8 @@ import UIKit
 
 final class BioUserViewController: UIViewController {
     
+    @IBOutlet weak var bioDescriptionLabel: UILabel!
+    
     //    private let user = User.getUser()
     
     private let primaryColor = UIColor(

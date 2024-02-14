@@ -9,6 +9,17 @@ import UIKit
 
 final class UserViewController: UIViewController {
     
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var surnameLabel: UILabel!
+    
+    @IBOutlet weak var studiesLabel: UILabel!
+    
+    @IBOutlet weak var positionLabel: UILabel!
+    @IBOutlet weak var hobbiesLabel: UILabel!
+    
+    var user: User?
+    
     //    private let user = User.getUser()
     
     private let primaryColor = UIColor(
@@ -27,6 +38,14 @@ final class UserViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+        
+        if let user = user {
+                    nameLabel.text = user.person.name
+                    surnameLabel.text = user.person.surname
+                    studiesLabel.text = user.person.studies
+                    positionLabel.text = user.person.position
+                    hobbiesLabel.text = user.person.hobbies
+                }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
