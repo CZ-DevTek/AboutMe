@@ -15,12 +15,20 @@ final class LoginViewController: UIViewController {
     private let user = "User"
     private let password = "Password"
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        userNameTextField.text = user
+        passwordTextField.text = password
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let welcomeVC = segue.destination as? WelcomeViewController
-        welcomeVC?.userName = user
+        welcomeVC?.userNameTextField = user
         let TabBarVC = segue.destination as? UITabBarController
         TabBarVC?.viewControllers?.forEach { viewController in
-            if let userVC = viewController as? UserViewController{
+            if let userVC = viewController as? UserViewController {
+                
+            }else if let bioVC = viewController as? BioUserViewController {
                 
             }
         }

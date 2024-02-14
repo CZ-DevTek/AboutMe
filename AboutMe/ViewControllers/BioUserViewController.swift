@@ -9,9 +9,10 @@ import UIKit
 
 final class BioUserViewController: UIViewController {
     
+    @IBOutlet weak var BioUserTitleLabel: UILabel!
     @IBOutlet weak var bioDescriptionLabel: UILabel!
     
-    //    private let user = User.getUser()
+    private let user = User.getUser()
     
     private let primaryColor = UIColor(
         red: 210/255,
@@ -29,6 +30,8 @@ final class BioUserViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+        bioDescriptionLabel.text = user.person.biography
+        BioUserTitleLabel.text = "\(user.person.name) \(user.person.surname) Bio"
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

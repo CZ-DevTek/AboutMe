@@ -10,8 +10,11 @@ import UIKit
 final class WelcomeViewController: UIViewController {
     
     @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet weak var presentationLabel: UILabel!
     
-    var userName: String!
+    var userNameTextField: String!
+    
+    private let user = User.getUser()
     
     private let primaryColor = UIColor(
         red: 210/255,
@@ -29,7 +32,8 @@ final class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
-        welcomeLabel.text = "Welcome, \(userName ?? "")!"
+        welcomeLabel.text = "Welcome, \(userNameTextField ?? "")!"
+        presentationLabel.text = "My name is \(user.person.name) \(user.person.surname)"
     }
 }
 // MARK: - Set background color

@@ -9,12 +9,10 @@ import UIKit
 
 final class UserViewController: UIViewController {
     
+    @IBOutlet weak var userTitleLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
-    
     @IBOutlet weak var surnameLabel: UILabel!
-    
     @IBOutlet weak var studiesLabel: UILabel!
-    
     @IBOutlet weak var positionLabel: UILabel!
     @IBOutlet weak var hobbiesLabel: UILabel!
     
@@ -36,12 +34,14 @@ final class UserViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+        userTitleLabel.text = "\(user.person.name) \(user.person.surname)"
         nameLabel.text = user.person.name
         surnameLabel.text = user.person.surname
         studiesLabel.text = user.person.studies
         positionLabel.text = user.person.position
         hobbiesLabel.text = user.person.hobbies
     }
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
