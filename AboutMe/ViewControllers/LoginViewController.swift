@@ -27,7 +27,7 @@ final class LoginViewController: UIViewController {
         let TabBarVC = segue.destination as? UITabBarController
         TabBarVC?.viewControllers?.forEach { viewController in
             if let userVC = viewController as? UserViewController {
-                
+                welcomeVC?.userNameTextField = user
             }else if let bioVC = viewController as? BioUserViewController {
                 
             }
