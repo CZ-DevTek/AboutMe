@@ -6,13 +6,13 @@
 //
 
 struct User {
-    let userName: String
+    let user: String
     let password: String
     let person: Person
     
     static func getUser() -> User {
         User(
-            userName: "User",
+            user: "User",
             password: "Password",
             person: Person(
                 name: "Carlos",

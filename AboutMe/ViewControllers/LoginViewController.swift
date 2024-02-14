@@ -22,13 +22,11 @@ final class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let welcomeVC = segue.destination as? WelcomeViewController
-        welcomeVC?.userNameTextField = user
         let TabBarVC = segue.destination as? UITabBarController
         TabBarVC?.viewControllers?.forEach { viewController in
-            if let userVC = viewController as? UserViewController {
-                welcomeVC?.userNameTextField = user
-            }else if let bioVC = viewController as? BioUserViewController {
+            if let welcomeVC = segue.destination as? WelcomeViewController {
+                welcomeVC.userNameTextField = user
+            } else if let userVC = segue.destination as? UserViewController {
                 
             }
         }
