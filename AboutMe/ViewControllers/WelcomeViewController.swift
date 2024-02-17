@@ -10,15 +10,20 @@ import UIKit
 final class WelcomeViewController: UIViewController {
     
     @IBOutlet weak var welcomeLabel: UILabel!
-    @IBOutlet weak var presentationLabel: UILabel!
     
     var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer()
-        welcomeLabel.text = "Welcome, \(user.login)!"
-        presentationLabel.text = "My name is \(user.person.fullName)"
+        if let user = user {
+            welcomeLabel.text = """
+                        Welcome, \(user.login)!
+                        My name is \(user.person.fullName)
+                        """
+        } else {
+            welcomeLabel.text = "Welcome!"
+        }
     }
 }
 

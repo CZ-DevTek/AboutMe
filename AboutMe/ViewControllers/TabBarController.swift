@@ -14,6 +14,7 @@ final class TabBarController: UITabBarController {
         super.viewDidLoad()
         let appearance = UITabBarAppearance()
         tabBar.standardAppearance = appearance
+        tabBar.scrollEdgeAppearance = appearance
         tabBar.items?.last?.title = user.person.fullName
         
         transferData()

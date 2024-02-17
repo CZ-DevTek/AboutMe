@@ -37,9 +37,7 @@ final class LoginViewController: UIViewController {
         guard userNameTextField.text == user.login, passwordTextField.text == user.password else {
             showAlert(
                 withTitle: "Invalid login or password",
-                andMessage: "Please, enter correct login and password") {
-                    self.passwordTextField.text = ""
-                }
+                andMessage: "Please, enter correct login and password")
             return false
         }
         return true
@@ -51,7 +49,7 @@ final class LoginViewController: UIViewController {
         : showAlert(withTitle: "Did you forget your password?", andMessage: "Your password is \(user.password)")
     }
     
-    @IBAction func unwind(for segue: UIStoryboardSegue) {
+    @IBAction func unwind(segue: UIStoryboardSegue) {
         userNameTextField.text = ""
         passwordTextField.text = ""
     }

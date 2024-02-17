@@ -109,7 +109,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="oUb-0B-cvw">
-                                <rect key="frame" x="16" y="167" width="361" height="213"/>
+                                <rect key="frame" x="16" y="167" width="361" height="149.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, user!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Wa-Yp-ncd">
                                         <rect key="frame" x="82.000000000000014" y="0.0" width="197.33333333333337" height="36"/>
@@ -117,14 +117,8 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My name is carlos garcia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZA-6s-1tb">
-                                        <rect key="frame" x="64.000000000000014" y="73" width="233.33333333333337" height="26.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <color key="textColor" systemColor="systemBackgroundColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8b1-nW-2dx">
-                                        <rect key="frame" x="146" y="136.33333333333331" width="69" height="76.666666666666686"/>
+                                        <rect key="frame" x="146" y="73" width="69" height="76.666666666666686"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="64"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -148,8 +142,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <connections>
-                        <outlet property="presentationLabel" destination="vZA-6s-1tb" id="zjh-RL-YCm"/>
-                        <outlet property="welcomeLabel" destination="2Wa-Yp-ncd" id="f5l-wK-Kps"/>
+                        <outlet property="welcomeLabel" destination="2Wa-Yp-ncd" id="oz3-yy-iyf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B7e-ib-xGX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -3,4 +3,54 @@
    uuid = "CB24F632-0247-4773-AD80-32423B6C265F"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E937E2FB-863D-4D3A-82B1-89726F0E1879"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AboutMe/Model/User.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "getPerson()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E937E2FB-863D-4D3A-82B1-89726F0E1879 - 6d18229a9a76be6d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static AboutMe.Person.getPerson() -&gt; AboutMe.Person"
+                  moduleName = "AboutMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/carloscz/Documents/Swiftbook%20Curse/AboutMe/AboutMe/Model/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "228">
+               </Location>
+               <Location
+                  uuid = "E937E2FB-863D-4D3A-82B1-89726F0E1879 - 6d18229a9a76be6d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static AboutMe.Person.getPerson() -&gt; AboutMe.Person"
+                  moduleName = "AboutMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/carloscz/Documents/Swiftbook%20Curse/AboutMe/AboutMe/Model/User.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "264">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

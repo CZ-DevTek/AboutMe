@@ -18,7 +18,6 @@ struct User {
             login: "User",
             password: "Password",
             person: Person.getPerson()
-            
         )
     }
 }
@@ -41,7 +40,7 @@ struct Person {
             studies: "Landscape Designer",
             position: "Business Developer Manager",
             hobbies: "Music, Gaming, Animals",
-            biography: " Born in Barcelona, now proudly calling Saint Petersburg, Russia my home. As a landscaper and parks designer, I've sculpted green spaces with creativity and precision. My design programs included Photoshop, Figma, SketchUp, Corel Draw, and more. I embarked on my programming way several years ago, initially crafting websites in PHP and HTML. Over time, I ventured into blogging and created a couple of websites using WordPress, modifying CSS, HTML. It started as a hobby, but my fascination with coding continued to grow. Currently, my sights are set on becoming a professional iOS developer. I'm committed to mastering the iOS development and turning my passion into a career."
+            biography: "Born in Barcelona, now proudly calling Saint Petersburg, Russia my home. As a landscaper and parks designer, I've sculpted green spaces with creativity and precision. My design programs included Photoshop, Figma, SketchUp, Corel Draw, and more. I embarked on my programming way several years ago, initially crafting websites in PHP and HTML. Over time, I ventured into blogging and created a couple of websites using WordPress, modifying CSS, HTML. It started as a hobby, but my fascination with coding continued to grow. Currently, my sights are set on becoming a professional iOS developer. I'm committed to mastering the iOS development and turning my passion into a career."
         )
     }
 }
