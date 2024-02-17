@@ -50,9 +50,9 @@ final class LoginViewController: UIViewController {
         : showAlert(withTitle: "Did you forget your password?", andMessage: "Your password is \(user.password)")
     }
     
-    @IBAction func unwindSegue(segue: UIStoryboardSegue) {
-        userNameTextField.text = ""
-        passwordTextField.text = ""
+    @IBAction func unwind(segue: UIStoryboardSegue) {
+            userNameTextField.text = ""
+            passwordTextField.text = ""
     }
     
     private func showAlert(withTitle title: String, andMessage message: String, completion: (() -> Void)? = nil) {
