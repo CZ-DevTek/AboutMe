@@ -36,7 +36,7 @@ struct Person {
         Person(
             name: "Carlos",
             surname: "Garcia",
-            photo: "CarlosGarcia",
+            photo: "myphoto",
             studies: "Landscape Designer",
             position: "Business Developer Manager",
             hobbies: "Music, Gaming, Animals",

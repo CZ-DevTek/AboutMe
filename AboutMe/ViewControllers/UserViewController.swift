@@ -26,7 +26,7 @@ final class UserViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer()
-     //   photoImage.image = UIImage(named: user.person.photo)
+        photoImage.image = UIImage(named: user.person.photo)
         title = user.person.fullName
         nameLabel.text = user.person.name
         surnameLabel.text = user.person.surname

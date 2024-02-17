@@ -127,7 +127,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="unwind" destination="Qao-ze-TSH" eventType="touchUpInside" id="Trr-Re-fAl"/>
+                                    <segue destination="Qao-ze-TSH" kind="unwind" unwindAction="unwindWithSegue:" id="WQ0-XG-JXm"/>
                                 </connections>
                             </button>
                         </subviews>
