@@ -9,32 +9,25 @@ import UIKit
 
 final class UserViewController: UIViewController {
     
-    @IBOutlet weak var userTitleLabel: UILabel!
+    @IBOutlet var photoImage: UIImageView! {
+        didSet{
+            photoImage.layer.cornerRadius = photoImage.frame.height / 2
+        }
+    }
+    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var surnameLabel: UILabel!
     @IBOutlet weak var studiesLabel: UILabel!
     @IBOutlet weak var positionLabel: UILabel!
     @IBOutlet weak var hobbiesLabel: UILabel!
     
-    private let user = User.getUser()
-    
-    private let primaryColor = UIColor(
-        red: 210/255,
-        green: 20/255,
-        blue: 0/255,
-        alpha: 0.75
-    )
-    private let secondaryColor = UIColor(
-        red: 255/255,
-        green: 105/255,
-        blue: 0/255,
-        alpha: 0.75
-    )
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
-        userTitleLabel.text = "\(user.person.name) \(user.person.surname)"
+        view.addVerticalGradientLayer()
+        photoImage.image = UIImage(named: user.person.photo)
+        title = "\(user.person.fullName)"
         nameLabel.text = user.person.name
         surnameLabel.text = user.person.surname
         studiesLabel.text = user.person.studies
@@ -42,10 +35,9 @@ final class UserViewController: UIViewController {
         hobbiesLabel.text = user.person.hobbies
     }
 
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let bioUserVC = segue.destination as? BioUserViewController
+        bioUserVC?.user = user
     }
 }
 

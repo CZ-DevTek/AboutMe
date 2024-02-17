@@ -9,33 +9,15 @@ import UIKit
 
 final class BioUserViewController: UIViewController {
     
-    @IBOutlet weak var BioUserTitleLabel: UILabel!
+
     @IBOutlet weak var bioDescriptionLabel: UILabel!
     
-    private let user = User.getUser()
-    
-    private let primaryColor = UIColor(
-        red: 210/255,
-        green: 20/255,
-        blue: 0/255,
-        alpha: 0.75
-    )
-    private let secondaryColor = UIColor(
-        red: 210/255,
-        green: 105/255,
-        blue: 0/255,
-        alpha: 0.75
-    )
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+        view.addVerticalGradientLayer()
         bioDescriptionLabel.text = user.person.biography
-        BioUserTitleLabel.text = "\(user.person.name) \(user.person.surname) Bio"
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        title = "\(user.person.fullName) Bio"
     }
 }

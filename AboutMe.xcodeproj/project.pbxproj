@@ -14,7 +14,9 @@
 		4F28F0942B77B8E500BFB6C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F28F0932B77B8E500BFB6C5 /* Assets.xcassets */; };
 		4F28F0972B77B8E500BFB6C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F28F0952B77B8E500BFB6C5 /* LaunchScreen.storyboard */; };
 		4F28F09F2B77E81300BFB6C5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F28F09E2B77E81300BFB6C5 /* WelcomeViewController.swift */; };
-		4F5E7E3B2B7AC1E90057D0B9 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5E7E3A2B7AC1E90057D0B9 /* UserModel.swift */; };
+		4F2C40582B80942E00689252 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2C40572B80942E00689252 /* TabBarController.swift */; };
+		4F2C405A2B80992200689252 /* Extension + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2C40592B80992200689252 /* Extension + UIView.swift */; };
+		4F5E7E3B2B7AC1E90057D0B9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5E7E3A2B7AC1E90057D0B9 /* User.swift */; };
 		4F5E7E3D2B7AC38D0057D0B9 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5E7E3C2B7AC38D0057D0B9 /* UserViewController.swift */; };
 		4F5E7E3F2B7C06370057D0B9 /* BioUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5E7E3E2B7C06370057D0B9 /* BioUserViewController.swift */; };
 /* End PBXBuildFile section */
@@ -29,7 +31,9 @@
 		4F28F0962B77B8E500BFB6C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F28F0982B77B8E500BFB6C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F28F09E2B77E81300BFB6C5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
-		4F5E7E3A2B7AC1E90057D0B9 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		4F2C40572B80942E00689252 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		4F2C40592B80992200689252 /* Extension + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIView.swift"; sourceTree = "<group>"; };
+		4F5E7E3A2B7AC1E90057D0B9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4F5E7E3C2B7AC38D0057D0B9 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		4F5E7E3E2B7C06370057D0B9 /* BioUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +77,14 @@
 			path = AboutMe;
 			sourceTree = "<group>";
 		};
+		4F2C405B2B80992A00689252 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4F2C40592B80992200689252 /* Extension + UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		4F5E7E362B7ABBBB0057D0B9 /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,9 +99,11 @@
 			isa = PBXGroup;
 			children = (
 				4F28F08E2B77B8E400BFB6C5 /* LoginViewController.swift */,
+				4F2C40572B80942E00689252 /* TabBarController.swift */,
 				4F28F09E2B77E81300BFB6C5 /* WelcomeViewController.swift */,
 				4F5E7E3C2B7AC38D0057D0B9 /* UserViewController.swift */,
 				4F5E7E3E2B7C06370057D0B9 /* BioUserViewController.swift */,
+				4F2C405B2B80992A00689252 /* Extensions */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -106,7 +120,7 @@
 		4F5E7E392B7AC1960057D0B9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4F5E7E3A2B7AC1E90057D0B9 /* UserModel.swift */,
+				4F5E7E3A2B7AC1E90057D0B9 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,11 +197,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F28F08F2B77B8E400BFB6C5 /* LoginViewController.swift in Sources */,
+				4F2C40582B80942E00689252 /* TabBarController.swift in Sources */,
 				4F5E7E3D2B7AC38D0057D0B9 /* UserViewController.swift in Sources */,
 				4F5E7E3F2B7C06370057D0B9 /* BioUserViewController.swift in Sources */,
 				4F28F09F2B77E81300BFB6C5 /* WelcomeViewController.swift in Sources */,
+				4F2C405A2B80992200689252 /* Extension + UIView.swift in Sources */,
 				4F28F08B2B77B8E400BFB6C5 /* AppDelegate.swift in Sources */,
-				4F5E7E3B2B7AC1E90057D0B9 /* UserModel.swift in Sources */,
+				4F5E7E3B2B7AC1E90057D0B9 /* User.swift in Sources */,
 				4F28F08D2B77B8E400BFB6C5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
