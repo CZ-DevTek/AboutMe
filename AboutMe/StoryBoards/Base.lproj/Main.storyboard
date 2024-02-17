@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="Main View Controller" customClass="LoginViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,10 +83,11 @@
                             <constraint firstItem="Qfx-73-lJh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="z6T-g8-KDg"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="u8w-Ok-4VK"/>
                     <navigationItem key="navigationItem" id="RDe-8K-PCG"/>
                     <connections>
-                        <outlet property="passwordTextField" destination="4tE-bi-RJp" id="GvL-L8-mDe"/>
-                        <outlet property="userNameTextField" destination="JXf-ce-3vN" id="NUW-7g-o9p"/>
+                        <outlet property="passwordTextField" destination="4tE-bi-RJp" id="2pF-CG-hUi"/>
+                        <outlet property="userNameTextField" destination="JXf-ce-3vN" id="sBa-Tb-2Op"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -101,15 +102,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLY-1t-7f0">
-                                <rect key="frame" x="164.66666666666666" y="643" width="64" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Log Out"/>
-                                <connections>
-                                    <action selector="unwindSegue:" destination="Qao-ze-TSH" eventType="touchUpInside" id="Hh5-ft-wFV"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="oUb-0B-cvw">
                                 <rect key="frame" x="16" y="167" width="361" height="149.66666666666663"/>
                                 <subviews>
@@ -127,15 +119,25 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLC-xF-ffb">
+                                <rect key="frame" x="161.66666666666666" y="703" width="70" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <action selector="unwindSegue" destination="Qao-ze-TSH" eventType="touchUpInside" id="NWn-ug-JNR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6r1-Vc-Klv"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <color key="tintColor" systemColor="tableCellBlueTextColor"/>
                         <constraints>
-                            <constraint firstItem="iLY-1t-7f0" firstAttribute="centerX" secondItem="6r1-Vc-Klv" secondAttribute="centerX" id="9cK-oR-nVC"/>
+                            <constraint firstItem="QLC-xF-ffb" firstAttribute="centerY" secondItem="6r1-Vc-Klv" secondAttribute="centerY" constant="319" id="3dx-aZ-chy"/>
                             <constraint firstItem="oUb-0B-cvw" firstAttribute="top" secondItem="6r1-Vc-Klv" secondAttribute="top" constant="167" id="PQS-SC-O4Q"/>
-                            <constraint firstItem="6r1-Vc-Klv" firstAttribute="bottom" secondItem="iLY-1t-7f0" secondAttribute="bottom" constant="126" id="Zvo-7i-l1D"/>
+                            <constraint firstItem="QLC-xF-ffb" firstAttribute="centerX" secondItem="6r1-Vc-Klv" secondAttribute="centerX" id="cGZ-Vi-7wj"/>
                             <constraint firstItem="oUb-0B-cvw" firstAttribute="leading" secondItem="6r1-Vc-Klv" secondAttribute="leading" constant="16" id="f8p-oa-fAv"/>
+                            <constraint firstItem="6r1-Vc-Klv" firstAttribute="bottom" secondItem="QLC-xF-ffb" secondAttribute="bottom" constant="65" id="g6f-9x-zlk"/>
                             <constraint firstItem="6r1-Vc-Klv" firstAttribute="trailing" secondItem="oUb-0B-cvw" secondAttribute="trailing" constant="16" id="lvf-3L-rT6"/>
                         </constraints>
                     </view>
@@ -323,7 +325,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="fBT-pN-Evp">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="VvN-eh-bsm" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="VvN-eh-bsm" customClass="TabBarController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="n3e-rV-heN">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -339,11 +341,11 @@
             </objects>
             <point key="canvasLocation" x="808.39694656488541" y="-2.8169014084507045"/>
         </scene>
-        <!--Carlos-->
+        <!--User-->
         <scene sceneID="UqP-Do-m4X">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="Q3h-Zc-tcD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Carlos" image="person.fill" catalog="system" id="eo8-OJ-cOV"/>
+                    <tabBarItem key="tabBarItem" title="User" image="person.fill" catalog="system" id="eo8-OJ-cOV"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="ZN0-kl-PjT"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="30J-ad-EYL">
